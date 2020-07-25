@@ -12,10 +12,18 @@
 8. webgl webgl
 9. model 前端和WEBGL交流js文件
 
+### 使用
+
+1. UI: ant-design-vue
+2. webgl: THREE.JS r118
+3. Js: Vue.js
+
 ### 交互流程
 
-```
+```jvascript
+
 前端 和 webgl 通讯需要通过model管理
 model 功能：数据 触发前端、webgl页面更新(手动触发)
 前端  ==>  model  ==>  webgl  ==>  model  ==>  前端
+
 ```
