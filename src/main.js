@@ -6,6 +6,8 @@ import http from './utils/axios'
 // import './style/reset.less';
 import Antd from 'ant-design-vue';
 import 'ant-design-vue/dist/antd.css';
+
+import './components/index';
 Vue.config.productionTip = false;
 
 Vue.prototype.$http = http; // axios

@@ -1,0 +1,100 @@
+/** @format */
+@b-c: #cdcdcd;
+.p-max {
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+.p-full {
+	.p-max;
+	top: 0;
+	bottom: 0;
+}
+.e-b-m {
+	margin-left: 20px;
+}
+.e-head {
+	.p-max;
+	top: 0;
+	padding-top: 5px;
+	height: 44px;
+	border-bottom: 1px solid @b-c;
+	display: flex;
+	justify-content: space-between;
+	.e-h-r {
+		position: relative;
+		right: 20px;
+	}
+	.e-h-b {
+		position: relative;
+		line-height: 32px;
+		cursor: pointer;
+		&:hover {
+			color: #ff6666;
+		}
+	}
+}
+.e-main {
+	.p-max;
+	top: 45px;
+	bottom: 0;
+	@lw: 270px;
+	@rw: 270px;
+	// 页面操作
+	@l-o-h: 40px;
+	.e-ml-tab {
+		display: flex;
+		justify-content: space-between;
+		padding: 0 10px;
+		border-bottom: 1px solid @b-c;
+		line-height: @l-o-h - 1;
+		cursor: pointer;
+	}
+	.e-ml-operate {
+		position: absolute;
+		top: @l-o-h;
+		left: 0;
+		bottom: 0;
+		right: 0;
+	}
+	.e-m-left {
+		width: @lw - 1;
+		top: 0;
+		bottom: 0;
+		border-right: 1px solid @b-c;
+		.p-max;
+	}
+	.e-m-edit {
+		top: 0;
+		bottom: 0;
+		position: absolute;
+		left: @lw;
+		right: @rw;
+	}
+	.e-m-right {
+		top: 0;
+		bottom: 0;
+		width: @rw - 1;
+		position: absolute;
+		right: 0;
+		border-left: 1px solid @b-c;
+	}
+
+	// 中间可视区域
+	@e-c-h: 50px;
+	.e-me-view {
+		bottom: @e-c-h;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+	}
+	.e-me-config {
+		position: absolute;
+		bottom: 0;
+		height: @e-c-h - 1;
+		left: 0;
+		right: 0;
+		border-top: 1px solid @b-c;
+	}
+}

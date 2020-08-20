@@ -1,5 +1,7 @@
 <template>
-  <div>hello</div>
+  <div>
+    <router-link to="edit">编辑</router-link>
+  </div>
 </template>
 <script>
 export default {
