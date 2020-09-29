@@ -42,7 +42,7 @@
 					</div>
 					<!-- 组件库 -->
 					<div class="e-ml-com p-full" v-if="listState == 2">
-						com
+						<e-coms></e-coms>
 					</div>
 					<!-- 组件列表  -->
 					<div class="e-ml-list p-full" v-if="listState == 3">
@@ -85,11 +85,16 @@
 	</div>
 </template>
 <script>
+// 组件库列表
+import Components from '../../components/edit/compoents'
 export default {
 	name: "edit",
+	components: {
+		'e-coms': Components
+	},
 	data() {
 		return {
-			listState: 1, // 列表状态
+			listState: 2, // 列表状态
 			basicState: 0, // 右侧基础点击
 			listStyle: {
 				color: "#ff5555",
